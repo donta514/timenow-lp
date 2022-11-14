@@ -1,0 +1,42 @@
+{
+  "name": "codewell_timenow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "author": "Donta Smith",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/figma-challenges/timenow-lp.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/figma-challenges/timenow-lp/issues"
+  },
+  "homepage": "https://github.com/figma-challenges/timenow-lp#readme"
+}
