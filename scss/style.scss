@@ -74,7 +74,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 515px) {
       display: grid;
       grid-template-columns: auto 1fr;
       align-items: center;
@@ -86,7 +86,7 @@ header {
       top: 100%;
       width: 100%;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 515px) {
         display: block;
         position: relative;
         left: unset;
@@ -96,11 +96,11 @@ header {
       }
 
       nav {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 515px) {
           margin: 0 auto;
         }
         ul {
-          @media screen and (min-width: 768px) {
+          @media screen and (min-width: 515px) {
             display: flex;
             column-gap: 1.5rem;
           }
@@ -123,8 +123,7 @@ header {
     #menu {
       background: none;
       border: none;
-      // outline: none;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 515px) {
         display: none;
       }
       #close {
@@ -134,7 +133,7 @@ header {
   }
 
   &.open {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 515px) {
       .container {
         #menu {
           #close {
@@ -147,15 +146,18 @@ header {
         .dropdown {
           display: grid;
           text-align: center;
-          background-color: var(--main-black);
+          background-color: #fff;
           display: grid;
           row-gap: 1rem;
-          padding-top: 2rem;
+          padding-top: 2.5rem;
           nav {
             ul {
               display: grid;
               row-gap: 1rem;
             }
+          }
+          .cta-btn {
+            border-radius: 0px;
           }
         }
       }
@@ -168,7 +170,7 @@ header {
     color: var(--main-purple);
     font-family: var(--font-body);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: clamp(2rem, calc(1.4545rem + 2.7273vw), 3.5rem);
   }
 }
 
