@@ -1,48 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TImeNow Landing Page</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>TImeNow Landing Page</title>
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="myName">
-        <img src="/Assets/Logo.svg"/>
+  <body>
+    <header>
+      <div class="container">
+        <img src="/Assets/Logo.svg" />
+        <div class="dropdown">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="cta-btn">Start Scheduling</a>
+        </div>
+        <button id="menu">
+          <img
+            id="hamburger"
+            src="/Assets/Hamburger Menu.svg"
+            alt="menu open"
+          />
+          <img id="close" src="/Assets/close.png" alt="menu close" />
+        </button>
       </div>
-      <div class="dropdown">
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Features</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="#" class="cta-btn">Start Scheduling</a>
-      </div>
-      <button id="menu">
-        <img id="hamburger" src="/Assets/Hamburger Menu.svg" alt="menu open">
-        <img id="close" src="/Assets/close.png" alt="menu close">
-      </button>
-  </header>
-  <main class="container">
-    <section class="hero">
-      <h1>
-        Post when your audience is most active
-      </h1>
+    </header>
+    <main>
+      <section class="hero container">
+        <div class="hero-section-1">
+          <h1>Post when your audience is most active</h1>
+          <p>
+            With TimeNow, automatically scheudle your posts on Twitter,
+            LinkedIn, and Instagram to post when your followers are most active.
+          </p>
+          <div class="hero-schedule-demo">
+            <a href="#" class="cta-btn">Start Scheduling</a>
+            <a class="view-demo"> View Demo</a>
+          </div>
+          <div class="hero-learn-more">
+            <img src="/Assets/Shield.svg" />
+            <p>
+              TimeNow does not sell your data.
+              <a href="#">Learn more</a>
+            </p>
+          </div>
+        </div>
+        <div class="hero-section-2">
+          <img src="/Assets/Mockup.png" />
+        </div>
+      </section>
 
-    </section>
-  </main>
+      <section>
+        <div class="user-section-1 container">
+          <div class="user-section-list">
+            <h1>TimeNow is used by the most influential people.</h1>
+            <ul>
+              <li><img src="/Assets/UA1.png " alt="Avatar image" /></li>
+              <li><img src="/Assets/UA2.png " alt="Avatar image" /></li>
+              <li><img src="/Assets/UA3.png " alt="Avatar image" /></li>
+              <li><img src="/Assets/UA4.png " alt="Avatar image" /></li>
+              <li><img src="/Assets/UA5.png " alt="Avatar image" /></li>
+              <li><img src="/Assets/UA6.png " alt="Avatar image" /></li>
+              <li><img src="/Assets/UA7.png " alt="Avatar image" /></li>
+              <li><img src="/Assets/UA8.png " alt="Avatar image" /></li>
+            </ul>
+          </div>
+          <div class="user-section-info">
+            <p>
+              The most influential people on Facebook, Twitter, and Instagram
+              are using TweetNow to schedule posts when their followers are most
+              active.
+            </p>
+            <p>
+              They generally receive 23% more engagement than people who do not.
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <!-- <main>
+      <section>
+        <div class="section-info-final">
+          <div class="section-dashboard container">
+            <h3>Unified Dashboard</h3>
+            <h1>Customizable dashboard for all platforms.</h1>
+            <p>
+              Use Twitter and Instagram but not LinkedIn? You can customize your
+              dashboard to your liking. You can even schedule the same post to
+              individual platforms instead of all platforms.
+            </p>
+            <a class="cta-btn" href="#">Start Scheduling</a>
+          </div>
+          <div class="section-analytics container">
+            <h3>Enhanced Analytics</h3>
+            <h1>Real-time data that tells you everything.</h1>
+            <p>
+              Get detailed reports of what's working and what isn't. Engagement
+              rates, impressions, views, and much more data is available to you
+              through our in-depth dashboard tool.
+            </p>
+            <div class="vld">
+              <a href="#">View Live Demo</a>
+              <span>&#10140;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <main>
     <section class="topfold container">
       <h1>Helping companies build better, scalable software.</h1>
       <p>Award-winning web developer and author, with over 15+ years of working experience with Fortune 500 companies
@@ -148,7 +223,6 @@
       </div>
     </footer>
   </main> -->
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
