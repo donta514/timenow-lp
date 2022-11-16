@@ -4,9 +4,174 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <header class="sticky">
+      <div class="container">
+        <img src="/Assets/Logo.svg" />
+        <div class="dropdown">
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Features</a>
+              </li>
+              <li>
+                <a href="index2.html">Pricing</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="index2.html" class="cta-btn">Start Scheduling</a>
+        </div>
+        <button id="menu">
+          <img
+            id="hamburger"
+            src="/Assets/Hamburger Menu.svg"
+            alt="menu open"
+          />
+          <img id="close" src="/Assets/close.png" alt="menu close" />
+        </button>
+      </div>
+    </header>
+    <main class="pricing-wrapper">
+      <section class="container">
+        <div class="pricing-description">
+          <h1>Flexible Plans for Everyone.</h1>
+          <p>
+            Our plans are made for everyone. Whether you're just starting out on
+            social media, or have been on there for a long time, we have a plan
+            that's right for you.
+          </p>
+          <div class="pricing-toggle">
+            <p class="monthly">Billed Monthly</p>
+            <label class="toggle">
+              <input type="checkbox" />
+              <span class="slider cirlce"></span>
+            </label>
+            <p class="yearly">Billed Yearly</p>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="price">
+              <h1>$4</h1>
+              <span>/mo</span>
+            </div>
+            <p>Perfect plan if you're just starting out.</p>
+            <div class="features">
+              <ul>
+                <li>
+                  <img src="/Assets/Checkmark.svg" />
+                  <p>LinkIn Integration</p>
+                </li>
+                <li>
+                  <img src="/Assets/Checkmark.svg" />
+                  <p>Twitter Integration</p>
+                </li>
+                <li>
+                  <img src="/Assets/Checkmark.svg" />
+                  <p>Real-time Analytics</p>
+                </li>
+              </ul>
+            </div>
+            <a class="cta-btn" href="/">Subscribe Now</a>
+          </div>
+          <div class="pricing-card">
+            <div class="price">
+              <h1>$12</h1>
+              <span>/mo</span>
+            </div>
+            <p>Perfect plan if you're a heavy user of social media.</p>
+            <div class="features">
+              <ul>
+                <li>
+                  <img src="/Assets/Checkmark.svg" />
+                  <p>LinkIn Integration</p>
+                </li>
+                <li>
+                  <img src="/Assets/Checkmark.svg" />
+                  <p>Twitter Integration</p>
+                </li>
+                <li>
+                  <img src="/Assets/Checkmark.svg" />
+                  <p>Instagram Integration</p>
+                </li>
+                <li>
+                  <img src="/Assets/Checkmark.svg" />
+                  <p>Real-time Analytics</p>
+                </li>
+              </ul>
+            </div>
+            <a class="cta-btn" href="/">Subscribe Now</a>
+          </div>
+          <div class="pricing-card">
+            <div class="price">
+              <h1>$7</h1>
+              <span>/mo</span>
+            </div>
+            <p>Perfect plan if you're just starting out.</p>
+            <div class="features">
+              <ul>
+                <li>
+                  <img src="/Assets/Checkmark.svg" />
+                  <p>LinkIn Integration</p>
+                </li>
+                <li>
+                  <img src="/Assets/Checkmark.svg" />
+                  <p>Twitter Integration</p>
+                </li>
+              </ul>
+            </div>
+            <a class="cta-btn" href="/">Subscribe Now</a>
+          </div>
+        </div>
+      </section>
+      <footer class="container">
+        <img src="/Assets/Logo.svg" />
+        <div class="footer-container">
+          <div class="footer">
+            <div class="footer-product">
+              <h2>Product</h2>
+              <ul>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="index2.html">Pricing</a></li>
+                <li><a href="#">Features</a></li>
+              </ul>
+            </div>
+            <div class="footer-help">
+              <h2>Company</h2>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="footer-company">
+              <h2>Help</h2>
+              <ul>
+                <li><a href="#">Live Chat</a></li>
+                <li><a href="#">Send Email</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tweetnow">
+            <h2>Try TweetNow</h2>
+            <form action="index2.html">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <a class="cta-btn">Start Scheduling</a>
+            </form>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>

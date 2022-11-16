@@ -13,6 +13,10 @@
   --font-body-blue: #3b60bf;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-size: clamp(2.25rem, calc(1.3571rem + 4.4643vw), 3.5rem);
 }
@@ -45,14 +49,30 @@ body {
   margin: 0 auto;
 }
 
+.sticky {
+  position: sticky;
+  z-index: 10000;
+  top: 0;
+  width: 100%;
+}
+
+.sticky-bg {
+  background-color: #f2f2f2f5;
+  &.open {
+    .dropdown {
+      background-color: #f2f2f2f5 !important;
+    }
+  }
+}
+
 section {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 header {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   .container {
     position: relative;
     display: flex;
@@ -384,5 +404,82 @@ header {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+  }
+}
+
+// Pricing Page Styles
+.pricing-wrapper {
+  margin-inline: auto;
+  .pricing-description {
+    h1 {
+      font-family: var(--font-body);
+      text-align: center;
+      font-size: 3rem;
+    }
+    p {
+      text-align: center;
+      color: var(--main-black);
+      margin: 1rem 0 2rem;
+      font-size: 1.1rem;
+    }
+    .pricing-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .toggle {
+        position: relative;
+        display: inline-block;
+        width: 75px;
+        height: 35px;
+        text-align: center;
+        span {
+          .slider {
+          }
+        }
+      }
+    }
+  }
+  .pricing-grid {
+    display: grid;
+    gap: 15px;
+    .pricing-card {
+      border: 1px solid #0a0a0b57;
+      border-radius: 5px;
+      padding: 1rem;
+      .price {
+        display: flex;
+        align-items: baseline;
+        font-family: var(--font-body);
+        span {
+          color: #0a0a0b86;
+        }
+      }
+      p {
+        font-family: var(--font-body);
+        font-size: clamp(1rem, calc(0.8909rem + 0.5455vw), 1.3rem);
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #0a0a0b57;
+      }
+      .features {
+        display: grid;
+        li {
+          display: flex;
+          gap: 20px;
+          p {
+            margin: 0.5rem 0;
+            padding: 0;
+            border: 0;
+          }
+        }
+      }
+      .cta-btn {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 1rem;
+      }
+    }
   }
 }
