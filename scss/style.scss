@@ -56,6 +56,10 @@ body {
   width: 100%;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .sticky-bg {
   background-color: #f2f2f2f5;
   &.open {
@@ -349,7 +353,7 @@ header {
         a {
           text-decoration: none;
           font-family: var(--font-body);
-          color: var(--main-black);
+          color: #0a0a0b99;
         }
       }
     }
@@ -442,6 +446,11 @@ header {
   .pricing-grid {
     display: grid;
     gap: 15px;
+    @media screen and (min-width: 768px) {
+      // display: flex;
+      // flex-direction: row;
+      // margin-inline: auto;
+    }
     .pricing-card {
       border: 1px solid #0a0a0b57;
       border-radius: 5px;

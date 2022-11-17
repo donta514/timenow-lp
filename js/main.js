@@ -1,6 +1,8 @@
 const header = document.querySelector("header");
 const menuBtn = document.querySelector("#menu");
 const sticky = header.offsetTop;
+const monthlySub = document.querySelector("monthly");
+const yearlySub = document.querySelector("yearly");
 
 menuBtn.addEventListener("click", () => {
   header.classList.toggle("open");
@@ -17,3 +19,7 @@ const stickyHeader = () => {
     header.classList.remove("sticky-bg");
   }
 };
+
+monthlySub.addEventListener("click", () => {
+  monthlySub.classList.add("bold");
+});
