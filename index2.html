@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>TimeNow Pricing</title>
   </head>
   <body>
     <header class="sticky">
@@ -44,11 +44,13 @@
             that's right for you.
           </p>
           <div class="pricing-toggle">
-            <p class="monthly">Billed Monthly</p>
-            <label class="toggle">
-              <input type="checkbox" />
-              <span class="slider cirlce"></span>
-            </label>
+            <p class="monthly bold">Billed Monthly</p>
+            <div class="toggle">
+              <label>
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
             <p class="yearly">Billed Yearly</p>
           </div>
         </div>
@@ -57,7 +59,7 @@
         <div class="pricing-grid">
           <div class="pricing-card">
             <div class="price">
-              <h1 id="price">$4</h1>
+              <h1 id="priceNum">$4</h1>
               <span>/mo</span>
             </div>
             <p>Perfect plan if you're just starting out.</p>
@@ -81,7 +83,7 @@
           </div>
           <div class="pricing-card">
             <div class="price">
-              <h1>$12</h1>
+              <h1 class="priceNum">$12</h1>
               <span>/mo</span>
             </div>
             <p>Perfect plan if you're a heavy user of social media.</p>
@@ -109,7 +111,7 @@
           </div>
           <div class="pricing-card">
             <div class="price">
-              <h1 id="subPrice">$7</h1>
+              <h1 class="priceNum">$7</h1>
               <span>/mo</span>
             </div>
             <p>Perfect plan if you're just starting out.</p>
