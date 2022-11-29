@@ -43,6 +43,19 @@ body {
   background-color: #fff;
 }
 
+.toggle:checked + label {
+  background: #bada55;
+}
+
+.toggle:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 130px;
+}
+
 .container {
   max-width: 1200px;
   padding-inline: 1rem;
@@ -486,14 +499,14 @@ header {
     display: grid;
     gap: 15px;
     @media screen and (min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      display: flex;
     }
     .pricing-card {
       display: grid;
       justify-content: stretch;
       border: 1px solid #0a0a0b57;
       border-radius: 5px;
+      height: 100%;
       padding: 1rem;
       .price {
         display: flex;
